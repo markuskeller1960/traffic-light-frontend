@@ -3,12 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { AppMaterialModule } from './common/module/app-material/app-material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppMaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
